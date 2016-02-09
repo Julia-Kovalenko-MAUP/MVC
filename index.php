@@ -1,9 +1,9 @@
 <?php
+// объявляем константу пути нашего проекта
+define('ROOT', dirname(FILE));
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// подключаем класс маршрутизатора
+include_once(ROOT.'/components/Router.php');
 
-echo 'HELLO!';
+$router = new Router;
+$router->run();
